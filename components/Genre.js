@@ -17,6 +17,7 @@ const GenreContainer = styled.View`
 const Text = styled.Text`
     opacity: 0.5;
     font-size: 8px;
+    color: white;
 `
 
 const Genre = ({genres}) => {
@@ -25,8 +26,8 @@ const Genre = ({genres}) => {
             {genres.map((genre, i) => {
                 return ( 
                     <GenreContainer key={i.toString()}>
-                        {/* <Text>{genre}</Text> */}
-                        <Text>Prueba</Text>
+                        <Text>{genre}</Text>
+                     
                     </GenreContainer>
                 )
             })}
